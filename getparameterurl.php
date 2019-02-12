@@ -126,8 +126,7 @@
 
           <!-- Content Row -->
           <div class="row">
-             
-              <div class="col-lg-6">
+            <div class="col-lg-6">
                 <div class="p-5">
                   <div class="dropdown mb-4">
                       <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -139,8 +138,27 @@
                       </div>
                     </div>
                 </div>
-              </div>
             </div>
+
+             <!-- Collapsable Card Example -->
+             <div class="card shadow mb-4">
+                <!-- Card Header - Accordion -->
+                <a href="#collapseCardExample" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample">
+                  <h6 class="m-0 font-weight-bold text-primary">Coding</h6>
+                </a>
+                <!-- Card Content - Collapse -->
+                <div class="collapse show" id="collapseCardExample">
+                  <div class="card-body">
+                  var sURL = window.document.URL.toString();</p>
+                  var url = new URL(sURL);</p>
+                  var nik = url.searchParams.get(&quot;nik&quot;);</p>
+                  console.log(nik);</p>
+                  alert(nik);</p>
+                  </div>
+                </div>
+              </div>
+              
+          </div>
           <!-- Content Row -->
 
         </div>

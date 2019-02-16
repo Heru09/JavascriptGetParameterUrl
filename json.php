@@ -111,7 +111,7 @@
             <!-- Nav Item - User Information -->
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small">######</span>
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">#####</span>
                 <img class="img-profile rounded-circle" src="http://localhost/TutorialPemrograman/img/garuda.png">
               </a>
             </li>
@@ -127,31 +127,9 @@
           <!-- Content Row -->
           <div class="row">
 
-              <div class="card">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Javascript</h6>
-                </div>
-                <div class="card-body text-center">
-                  <a href="http://localhost/TutorialPemrograman/getparameterurl.php?nik=12&nama=heru"><div class="bg-success text-white p-3 rotate-15 d-inline-block my-4">Get Parameter Url</div></a>
-                  <hr>
-                  </div>
-              </div>
+          <button class="btn btn-google btn-block" onclick="jsonstringify()">JSON StringIfy</button>
+          <button class="btn btn-google btn-block" onclick="jsonparse()">JSON Parse</button>
 
-          </div>
-          <!-- Content Row -->
-
-          <!-- Content Row -->
-          <div class="row">
-
-              <div class="card">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">JSON</h6>
-                </div>
-                <div class="card-body text-center">
-                  <a href="http://localhost/TutorialPemrograman/json.php"><div class="bg-success text-white p-3 rotate-15 d-inline-block my-4">JSON</div></a>
-                  <hr>
-                  </div>
-              </div>
 
           </div>
           <!-- Content Row -->
@@ -196,3 +174,23 @@
 </body>
 
 </html>
+
+<script>
+
+function jsonstringify(){
+
+   var sendjson = [
+    {
+       name: "Heru",
+       age: "25"
+    }
+    
+   ];
+    alert(JSON.stringify(sendjson));
+}
+
+function jsonparse(){
+    var sendjson = '{"name":"Heru", "age":"25"}';
+    alert(JSON.parse(sendjson).age);
+}
+</script>

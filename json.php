@@ -131,6 +131,8 @@
           <button class="btn btn-google btn-block" onclick="jsonparse()">JSON Parse</button>
           <button class="btn btn-google btn-block" onclick="nestedjson()">Nested/Bersarang JSON</button>
           <button class="btn btn-google btn-block" onclick="jsonarray()">JSON Array</button>
+          <button class="btn btn-google btn-block" onclick="jsontotext()">JSON To Text/JSON Menggunakan Variable</button>
+          <button class="btn btn-google btn-block" onclick="getjsoncopas()">JSON To Text/JSON Menggunakan Variable Copas w3school</button>
                 
 
 
@@ -230,6 +232,33 @@ function jsonarray(){
   //console.log(orang[1].name); //Hilangkan Tanda `
   //console.log(JSON.parse(orang)[1].name); //Menggunakan Tanda `
   console.log(JSON.parse(orang)); //Menggunakan Tanda `
+}
+
+function jsontotext(){
+  var baznas =
+  {"karyawanbaznas":
+    [
+      {
+        "name": "Heru",
+        "Umur": 25,
+        "Alamat": "BLK"
+      },
+      {
+        "name": "Mudin",
+        "Umur": 55,
+        "Alamat": "Padang Panjang"
+      } 
+    ]
+  }
+  console.log(baznas);
+}
+
+function getjsoncopas(){
+  var google = '{ "karyawangoogle" : [' +
+  '{ "name":"John" , "umur":"25", "alamat": "New York" },' +
+  '{ "name":"Peter" , "umur":"30", "alamat":"Singapore" } ]}';
+  var obj = JSON.parse(google);
+  console.log(obj)
 }
 
 </script>

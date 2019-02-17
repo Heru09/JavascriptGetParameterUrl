@@ -126,7 +126,14 @@
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
+            <!-- Content Row -->
+            <div class="row">
 
+            <button class="btn btn-google btn-block" onclick="jsonarray()">GET JSON Array</button>
+           
+
+            </div>
+            <!-- Content Row -->
           <!-- DataTales Example -->
           <div class="card shadow mb-4">
             <div class="card-header py-3">
@@ -233,3 +240,39 @@
 </body>
 
 </html>
+
+<script>
+function jsonarray(){
+/*  
+{"karyawan": 
+  [ 
+    {
+      "name": "Heru",
+      "position": "Amil",
+      "office": "BAZNAS",
+      "age": "25",
+      "startdate": "Januari  2018",
+      "salary": "750.000"
+    },
+    {
+      "name": "Anton S",
+      "position": "Sekretaris",
+      "office": "BAZNAS",
+      "age": "55",
+      "startdate": "Januari  2018",
+      "salary": ["750.000", "1.000.000"]
+    }
+  ]
+}
+  console.log(json.parse(karyawan).name); */
+
+  var text = '{ "employees" : [' +
+              '{ "firstName":"John" , "lastName":"Doe" },' +
+              '{ "firstName":"Anna" , "lastName":"Smith" },' +
+              '{ "firstName":"Peter" , "lastName":"Jones" } ]}';
+              var obj = JSON.parse(text);
+  console.log(obj);
+}
+
+
+</script>

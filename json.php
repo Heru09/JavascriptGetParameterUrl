@@ -129,6 +129,9 @@
 
           <button class="btn btn-google btn-block" onclick="jsonstringify()">JSON StringIfy</button>
           <button class="btn btn-google btn-block" onclick="jsonparse()">JSON Parse</button>
+          <button class="btn btn-google btn-block" onclick="nestedjson()">Nested/Bersarang JSON</button>
+          <button class="btn btn-google btn-block" onclick="jsonarray()">JSON Array</button>
+                
 
 
           </div>
@@ -179,13 +182,11 @@
 
 function jsonstringify(){
 
-   var sendjson = [
+   var sendjson =
     {
-       name: "Heru",
-       age: "25"
-    }
-    
-   ];
+       "name": "Heru",
+       "age": "25"
+    };
     alert(JSON.stringify(sendjson));
 }
 
@@ -193,4 +194,42 @@ function jsonparse(){
     var sendjson = '{"name":"Heru", "age":"25"}';
     alert(JSON.parse(sendjson).age);
 }
+
+function nestedjson(){
+  var orang = 
+  {
+    "name": "Heru",
+    "jk": "L",
+    "sifat": ["Santai", "Diam", "Coding"],
+    "pendidikan":["SD 22", "SMPN2", "SMAN 2", "Stikom PGRI BWI"]
+  }
+  console.log(orang);
+
+}
+
+function jsonarray(){
+  var orang = 
+  `[
+    {
+        "name": "Heru P",
+        "jk": "L",
+        "Alamat": "Jl. BLK"
+    },
+    {
+        "name": "Hayyu F",
+        "jk": "P",
+        "Alamat": "Bengkulu"
+    },
+    {
+        "name": "Erwin",
+        "jk": "L",
+        "Alamat": "Bwi"
+    }
+  ]`
+  //console.log(orang); //Hilangkan Tanda `
+  //console.log(orang[1].name); //Hilangkan Tanda `
+  //console.log(JSON.parse(orang)[1].name); //Menggunakan Tanda `
+  console.log(JSON.parse(orang)); //Menggunakan Tanda `
+}
+
 </script>

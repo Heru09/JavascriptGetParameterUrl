@@ -126,69 +126,36 @@
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
-            <!-- Content Row -->
-            <div class="row">
 
-            <button class="btn btn-google btn-block" onclick="jsonarray()">GET JSON Array</button>
-           
-
-            </div>
-            <!-- Content Row -->
           <!-- DataTales Example -->
           <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">Ajax DataTables Example</h6>
+              <h6 class="m-0 font-weight-bold text-primary">DataTables Ajax JSON Example</h6>
             </div>
             <div class="card-body">
               <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+              <table id="example" class="display" style="width:100%">
                   <thead>
-                    <tr>
-                      <th>Name</th>
-                      <th>Position</th>
-                      <th>Office</th>
-                      <th>Age</th>
-                      <th>Start date</th>
-                      <th>Salary</th>
-                    </tr>
+                      <tr>
+                          <th>Name</th>
+                          <th>Position</th>
+                          <th>Office</th>
+                          <th>Extn.</th>
+                          <th>Start date</th>
+                          <th>Salary</th>
+                      </tr>
                   </thead>
                   <tfoot>
-                    <tr>
-                      <th>Name</th>
-                      <th>Position</th>
-                      <th>Office</th>
-                      <th>Age</th>
-                      <th>Start date</th>
-                      <th>Salary</th>
-                    </tr>
+                      <tr>
+                          <th>Name</th>
+                          <th>Position</th>
+                          <th>Office</th>
+                          <th>Extn.</th>
+                          <th>Start date</th>
+                          <th>Salary</th>
+                      </tr>
                   </tfoot>
-                  <tbody>
-                   <tr>
-                      <td>Paul Byrd</td>
-                      <td>Chief Financial Officer (CFO)</td>
-                      <td>New York</td>
-                      <td>64</td>
-                      <td>2010/06/09</td>
-                      <td>$725,000</td>
-                    </tr>
-                    <tr>
-                      <td>Airi Satou</td>
-                      <td>Accountant</td>
-                      <td>Tokyo</td>
-                      <td>33</td>
-                      <td>2008/11/28</td>
-                      <td>$162,700</td>
-                    </tr>
-                    <tr>
-                      <td>Brielle Williamson</td>
-                      <td>Integration Specialist</td>
-                      <td>New York</td>
-                      <td>61</td>
-                      <td>2012/12/02</td>
-                      <td>$372,000</td>
-                    </tr>
-                  </tbody>
-                </table>
+              </table>
               </div>
             </div>
           </div>
@@ -240,39 +207,18 @@
 </body>
 
 </html>
-
 <script>
-function jsonarray(){
-/*  
-{"karyawan": 
-  [ 
-    {
-      "name": "Heru",
-      "position": "Amil",
-      "office": "BAZNAS",
-      "age": "25",
-      "startdate": "Januari  2018",
-      "salary": "750.000"
-    },
-    {
-      "name": "Anton S",
-      "position": "Sekretaris",
-      "office": "BAZNAS",
-      "age": "55",
-      "startdate": "Januari  2018",
-      "salary": ["750.000", "1.000.000"]
-    }
-  ]
-}
-  console.log(json.parse(karyawan).name); */
-
-  var text = '{ "employees" : [' +
-              '{ "firstName":"John" , "lastName":"Doe" },' +
-              '{ "firstName":"Anna" , "lastName":"Smith" },' +
-              '{ "firstName":"Peter" , "lastName":"Jones" } ]}';
-              var obj = JSON.parse(text);
-  console.log(obj);
-}
-
-
+$(document).ready(function() {
+    $('#example').DataTable( {
+        "ajax": "datajson.txt",
+        "columns": [
+            { "data": "name" },
+            { "data": "position" },
+            { "data": "office" },
+            { "data": "extn" },
+            { "data": "start_date" },
+            { "data": "salary" }
+        ]
+    } );
+} );
 </script>

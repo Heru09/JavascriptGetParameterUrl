@@ -142,6 +142,7 @@
                     <div class="col mr-2">
                       <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"><a href="https://www.webslesson.info/2017/05/json-dynamic-dependent-select-box-using-jquery-and-ajax.html">By webslesson</a></div>
                       <div class="h5 mb-0 font-weight-bold text-gray-800">23/02/2019</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">Perka-no-90-tahun-2018.pdf</div>
                     </div>
                     <div class="col-auto">
                       <i class="fas fa-calendar fa-2x text-gray-300"></i>

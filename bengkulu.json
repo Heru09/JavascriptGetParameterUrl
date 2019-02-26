@@ -1,0 +1,137 @@
+[
+    {
+        "id": "1",
+        "name": "BENGKULU SELATAN",
+        "parent_id": "0"
+
+    },
+    {
+        "id": "2",
+        "name": "SELUMA",
+        "parent_id": "0"
+
+    },
+    {
+        "id": "3",
+        "name": "KAUR",
+        "parent_id": "0"
+
+    },
+    {
+        "id": "4",
+        "name": "KECAMATAN MANNA",
+        "parent_id": "1"
+
+    },
+    {
+        "id": "5",
+        "name": "KECAMATAN KOTA MANNA",
+        "parent_id": "1"
+
+    },
+    {
+        "id": "6",
+        "name": "KECAMATAN PASAR MANNA",
+        "parent_id": "1"
+
+    },
+    {
+        "id": "7",
+        "name": "KECAMATAN SEMIDANG ALAS MARAS",
+        "parent_id": "2"
+
+    },
+    {
+        "id": "8",
+        "name": "KECAMATAN SEMIDANG ALAS",
+        "parent_id": "2"
+
+    },
+    {
+        "id": "9",
+        "name": "KECAMATAN NASSAL",
+        "parent_id": "3"
+
+    },
+    {
+        "id": "10",
+        "name": "KECAMATAN MAJE",
+        "parent_id": "3"
+
+    },
+    {
+        "id": "11",
+        "name": "DESA KETAPING",
+        "parent_id": "4"
+
+    },
+    {
+        "id": "11",
+        "name": "DESA TERULUNG",
+        "parent_id": "4"
+
+    },
+    {
+        "id": "12",
+        "name": "KEL. KOTA MEDAN",
+        "parent_id": "5"
+
+    },
+    {
+        "id": "13",
+        "name": "KEL. IBUL",
+        "parent_id": "5"
+
+    },    
+    {
+        "id": "14",
+        "name": "KEL. PADANG KAPUK",
+        "parent_id": "5"
+
+    },
+    {
+        "id": "15",
+        "name": "KEL. PASAR BAWAH",
+        "parent_id": "6"
+
+    },
+    {
+        "id": "16",
+        "name": "DESA TEDUNAN",
+        "parent_id": "7"
+
+    },
+    {
+        "id": "17",
+        "name": "DESA KEMBANG MUMPO",
+        "parent_id": "7"
+
+    },
+    {
+        "id": "18",
+        "name": "MARAS JAUH",
+        "parent_id": "8"
+
+    },
+    {
+        "id": "19",
+        "name": "TANJUNG BETUAH",
+        "parent_id": "9"
+
+    },
+    {
+        "id": "20",
+        "name": "GEDUNG MENUNG",
+        "parent_id": "9"
+
+    },
+    {
+        "id": "21",
+        "name": "PARDA SUKA",
+        "parent_id": "10"
+
+    }
+
+
+
+]

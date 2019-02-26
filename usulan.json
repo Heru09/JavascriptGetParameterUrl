@@ -1,0 +1,18 @@
+[
+    {
+        "idbidang":"B1",
+        "namabidang":"BIDANG EKONOMI",
+        "idprogram":"B1P1",
+        "namaprogram":"ZAKAT COMUNITY DEVELOPMENT",
+        "idbantuan":"B1P11",
+        "jenisbantuan":"PROGRAM ZCD 1"
+    },
+    {
+        "idbidang":"B1",
+        "namabidang":"BIDANG EKONOMI",
+        "idprogram":"B1P1",
+        "namaprogram":"ZAKAT COMUNITY DEVELOPMENT",
+        "idbantuan":"B1P12",
+        "jenisbantuan":"PROGRAM ZCD 2"
+    }
+]

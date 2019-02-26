@@ -10,14 +10,21 @@
   <meta name="author" content="">
 
   <title>Tutorial Pemrograman</title>
-
-  <!-- Custom fonts for this template-->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-
-  <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" /> -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 
+  <!-- Custom fonts for this template-->
+  <!-- <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+ -->
+  <!-- Custom styles for this template-->
 
+  
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
 </head>
 
 <body id="page-top">
@@ -111,7 +118,7 @@
             <!-- Nav Item - User Information -->
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small">######</span>
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">#####</span>
                 <img class="img-profile rounded-circle" src="http://localhost/TutorialPemrograman/img/garuda.png">
               </a>
             </li>
@@ -126,53 +133,38 @@
 
           <!-- Content Row -->
           <div class="row">
-              <div class="card">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Javascript</h6>
-                </div>
-                <div class="card-body text-center">
-                  <a href="http://localhost/TutorialPemrograman/getparameterurl.php?nik=12&nama=heru"><div class="bg-success text-white p-3 rotate-15 d-inline-block my-4">Get Parameter Url</div></a>
-                  <hr>
+
+            <!-- Earnings (Monthly) Card Example -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"><a href="https://www.webslesson.info/2017/05/json-dynamic-dependent-select-box-using-jquery-and-ajax.html">By webslesson</a></div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">23/02/2019</div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                    </div>
                   </div>
+                </div>
               </div>
+            </div>
 
-              <div class="card">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">JSON</h6>
-                </div>
-                <div class="card-body text-center">
-                  <a href="http://localhost/TutorialPemrograman/json.php"><div class="bg-success text-white p-3 rotate-15 d-inline-block my-4">JSON</div></a>
-                  <hr>
-                </div>
-                <div class="card-body text-center">
-                  <a href="http://localhost/TutorialPemrograman/datatablejson.php"><div class="bg-success text-white p-3 rotate-15 d-inline-block my-4">Datatable JSON</div></a>
-                  <hr>
-                </div>
-              </div>
-
-              <div class="card">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Datatable</h6>
-                </div>
-                <div class="card-body text-center">
-                  <a href="http://localhost/TutorialPemrograman/datatable.php"><div class="bg-success text-white p-3 rotate-15 d-inline-block my-4">Datatable</div></a>
-                  <hr>
-                </div>
-                <div class="card-body text-center">
-                  <a href="http://localhost/TutorialPemrograman/datatableajaxjson.php"><div class="bg-success text-white p-3 rotate-15 d-inline-block my-4">Datatable Ajax JSON</div></a>
-                  <hr>
-                </div>
-              </div>
-
-              <div class="card">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Dynamic Dependent Select</h6>
-                </div>
-                <div class="card-body text-center">
-                  <a href="http://localhost/TutorialPemrograman/dynamicdependent.php"><div class="bg-success text-white p-3 rotate-15 d-inline-block my-4">Select Nested</div></a>
-                  <hr>
-                </div>
-              </div>
+            <div class="container" style="width:600px;">
+            <h2>JSON - Dynamic Dependent Jquery and Ajax</h2><br /><br />
+            <select name="kabupaten" id="kabupaten" class="form-control input-lg">
+              <option value="">Pilih Kabupaten</option>
+            </select>
+            <br />
+            <select name="kecamatan" id="kecamatan" class="form-control input-lg">
+              <option value="">Pilih Kecamatan</option>
+            </select>
+            <br />
+            <select name="keldes" id="keldes" class="form-control input-lg">
+              <option value="">Pilih Kel. Desa</option>
+            </select>
+            </div>
 
           </div>
           <!-- Content Row -->
@@ -205,15 +197,63 @@
   </a>
 
   <!-- Bootstrap core JavaScript-->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+ <!--  <script src="vendor/jquery/jquery.min.js"></script> -->
+  <!-- <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
 
   <!-- Core plugin JavaScript-->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <!-- <script src="vendor/jquery-easing/jquery.easing.min.js"></script> -->
 
   <!-- Custom scripts for all pages-->
-  <script src="js/sb-admin-2.min.js"></script>
+  <!-- <script src="js/sb-admin-2.min.js"></script> -->
 
 </body>
 
 </html>
+
+<script>
+$(document).ready(function(){
+
+load_json_data('kabupaten');
+
+function load_json_data(id, parent_id){
+  var html_code = '';
+  $.getJSON('bengkulu.json', function(data){
+    html_code += '<option value= "">Pilih '+id+'</option>';
+    $.each(data, function(key, value){
+      if(id == 'kabupaten'){
+        if(value.parent_id == '0'){
+          html_code += '<option value="'+value.id+'">'+value.name+'</option>';
+        }
+      }else{
+        if(value.parent_id == parent_id){
+          html_code += '<option value="'+value.id+'">'+value.name+'</option>';
+        }
+      }
+    });
+    $('#'+id).html(html_code);
+  });
+}
+
+$(document).on('change','#kabupaten', function(){
+  var kecamatan_id = $(this).val();
+  if(kecamatan_id != ''){
+    load_json_data('kecamatan', kecamatan_id);
+  }else{
+    $('#kecamatan').html('<option value = "">Pilih Kecamatan</option>');
+    $('#keldes').html('<option value = "">Pilih Kel. Desa</option>');
+  }
+});
+
+$(document).on('change','#kecamatan', function(){
+  var keldes_id = $(this).val();
+  if(keldes_id != ''){
+    load_json_data('keldes', keldes_id);
+  }else{
+    $('keldes').html('<option value "">Pilih Kel. Des </option>');
+  }
+
+
+});
+
+});
+</script>

@@ -127,11 +127,29 @@
           <!-- Content Row -->
           <div class="row">
 
-            <select name="lamaranprgramer" id="lamaranprgramer" class="form-control input-lg">
-                <option value="">Pilih Lamaran</option>
-                <option value="">Front End</option>
-                <option value="">Back End</option>
-            </select>
+          <form class="p-3">
+            <div class="form-group">
+              <label>Lamaran</label>
+              <select class="form-control" id="pilihlamaran">
+                    <option value="pilih">Pilih Lamaran</option>
+                    <option value="frontend">Front End</option>
+                    <option value="backend">Back End</option>
+              </select>
+            </div>
+
+            <div class="form-group" id="persyaratanfrontend">
+              <label>Lamaran Front End Dibutuhkan</label>
+              <input type="text" class="form-control" placeholder="ajax, datatables, session">
+            </div>
+
+            <div class="form-group" id="persyaratanbackend">
+              <label>Lamaran Back End Dibutuhkan</label>
+              <input type="text" class="form-control" placeholder="css, html">
+            </div>
+              
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+
 
           </div>
           <!-- Content Row -->
@@ -183,3 +201,25 @@
 </body>
 
 </html>
+
+<script>
+$("#pilihlamaran").change(function() {
+      if($(this).val() == "pilih") {
+				$('#persyaratanfrontend').hide();
+        $('#persyaratanbackend').hide();
+				
+			}
+
+			if($(this).val() == "frontend") {
+				$('#persyaratanfrontend').show();
+        $('#persyaratanbackend').hide();
+				
+			}
+      if($(this).val() == "backend"){
+        $('#persyaratanbackend').show();
+        $('#persyaratanfrontend').hide();
+      }
+		});
+		$("#pilihlamaran").trigger("change");
+		
+</script>

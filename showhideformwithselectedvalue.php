@@ -111,7 +111,7 @@
             <!-- Nav Item - User Information -->
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small">######</span>
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">#####</span>
                 <img class="img-profile rounded-circle" src="http://localhost/TutorialPemrograman/img/garuda.png">
               </a>
             </li>
@@ -126,64 +126,12 @@
 
           <!-- Content Row -->
           <div class="row">
-              <div class="card">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Javascript</h6>
-                </div>
-                <div class="card-body text-center">
-                  <a href="http://localhost/TutorialPemrograman/getparameterurl.php?nik=12&nama=heru"><div class="bg-success text-white p-3 rotate-15 d-inline-block my-4">Get Parameter Url</div></a>
-                  <hr>
-                  </div>
-              </div>
 
-              <div class="card">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">JSON</h6>
-                </div>
-                <div class="card-body text-center">
-                  <a href="http://localhost/TutorialPemrograman/json.php"><div class="bg-success text-white p-3 rotate-15 d-inline-block my-4">JSON</div></a>
-                  <hr>
-                </div>
-                <div class="card-body text-center">
-                  <a href="http://localhost/TutorialPemrograman/datatablejson.php"><div class="bg-success text-white p-3 rotate-15 d-inline-block my-4">Datatable JSON</div></a>
-                  <hr>
-                </div>
-              </div>
-
-              <div class="card">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Datatable</h6>
-                </div>
-                <div class="card-body text-center">
-                  <a href="http://localhost/TutorialPemrograman/datatable.php"><div class="bg-success text-white p-3 rotate-15 d-inline-block my-4">Datatable</div></a>
-                  <hr>
-                </div>
-                <div class="card-body text-center">
-                  <a href="http://localhost/TutorialPemrograman/datatableajaxjson.php"><div class="bg-success text-white p-3 rotate-15 d-inline-block my-4">Datatable Ajax JSON</div></a>
-                  <hr>
-                </div>
-              </div>
-
-              <div class="card">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Dynamic Dependent Select</h6>
-                </div>
-                <div class="card-body text-center">
-                  <a href="http://localhost/TutorialPemrograman/dynamicdependent.php"><div class="bg-success text-white p-3 rotate-15 d-inline-block my-4">Select Nested</div></a>
-                  <hr>
-                </div>
-              </div>
-
-
-              <div class="card">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Show Hide Form</h6>
-                </div>
-                <div class="card-body text-center">
-                  <a href="http://localhost/TutorialPemrograman/showhideformwithselectedvalue.php"><div class="bg-success text-white p-3 rotate-15 d-inline-block my-4">Selected Value</div></a>
-                  <hr>
-                </div>
-              </div>
+            <select name="lamaranprgramer" id="lamaranprgramer" class="form-control input-lg">
+                <option value="">Pilih Lamaran</option>
+                <option value="">Front End</option>
+                <option value="">Back End</option>
+            </select>
 
           </div>
           <!-- Content Row -->
@@ -224,6 +172,13 @@
 
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="vendor/chart.js/Chart.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="js/demo/chart-area-demo.js"></script>
+  <script src="js/demo/chart-pie-demo.js"></script>
 
 </body>
 

@@ -177,7 +177,7 @@
 
               <div class="card">
                 <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Show Hide Form</h6>
+                  <h6 class="m-0 font-weight-bold text-primary">Show Hide Form JavaScript</h6>
                 </div>
                 <div class="card-body text-center">
                   <a href="http://localhost/TutorialPemrograman/showhideformwithselectedvalue.php"><div class="bg-success text-white p-3 rotate-15 d-inline-block my-4">Selected Value</div></a>
